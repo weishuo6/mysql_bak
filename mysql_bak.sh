@@ -1,8 +1,8 @@
 #!/bin/bash 
 source /etc/profile    #加载系统环境变量
 source ~/.bash_profile  #加载用户环境变量
-set -o nounset       #引用未初始化变量时退出
-#set -o errexit      #执行shell命令遇到错误时退出
+set -u       #引用未初始化变量时退出
+#set -e      #执行shell命令遇到错误时退出
 user="root"
 password="123456"
 host="localhost"
